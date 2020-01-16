@@ -6,4 +6,4 @@
 輸入 npm run serve便可執行  。
 
 
-<img src="https://imgur.com/cLuAFm3">
+https://imgur.com/cLuAFm3
