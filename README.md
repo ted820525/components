@@ -9,6 +9,7 @@ ex:C:\Users\Desktop\components-master\NCSIST_\ncsist><br>
 輸入 npm run serve便可執行  。
 
 # 資料夾結構圖
+
 https://imgur.com/PlhZ2DP
 
 # 例:抓取山積圖stackedgantt詳細說明圖
