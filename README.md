@@ -12,6 +12,8 @@ C:\Users\Desktop\components-master\NCSIST_\ncsist><br>
 https://imgur.com/mb4sd7e
 
 # 詳細說明圖可參考
+https://imgur.com/48AGRiY
+
 https://imgur.com/cLuAFm3
 
 https://imgur.com/5QdocvI
