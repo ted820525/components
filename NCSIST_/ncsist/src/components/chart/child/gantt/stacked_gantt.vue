@@ -2,7 +2,7 @@
     <div id="chart"></div>
 </template>
 <script>
-// import barchat from './barchat';
+
 import Highcharts from "highcharts";
 export default {
     name: "helloworld",

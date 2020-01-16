@@ -2,7 +2,7 @@
 <div class="container" style="width:62.5vw; height:38.4vh; border:solid 1px #abb7c8 ">
         
         <div class="chart" style="weight: 60%">
-            <gantt></gantt>
+            <stackedgantt></stackedgantt>
         </div>
         <!-- 複合式甘特圖 -->
 
@@ -21,14 +21,6 @@
         
     </div>  -->
     <!-- 溫度計 -->
-
-    
-
-
-
-
-        
-        
 </div>
 
 </template>
@@ -36,7 +28,7 @@
 <script>
 // 要使用請更改import顯示,下面也要components 名稱
 
-import gantt from './child/gantt/gantt';
+import stackedgantt from './child/gantt/stacked_gantt';
 // import linechart from './child/line/linechart';
 // import pieChart from './child/pie/piechart';
 // import temperature from './temperature/index';
@@ -44,7 +36,7 @@ import gantt from './child/gantt/gantt';
 
 export default {
     
-    components: { gantt},
+    components: { stackedgantt},
 
 data() {
         return {
