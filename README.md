@@ -5,7 +5,7 @@
 C:\Users\Desktop\components-master\NCSIST_<br>
 再打 cd ncsist  , 進入ncsist資料夾<br>
 C:\Users\Desktop\components-master\NCSIST_\ncsist><br>
-再輸入指令 npm install ,安裝完後<br>
+再輸入指令 npm install ,安裝npm完後<br>
 輸入 npm run serve便可執行  。
 
 # 資料夾結構圖
