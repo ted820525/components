@@ -1,0 +1,51 @@
+.barRow {
+    border-bottom: 1px solid #abb7c8;
+    height: 23%;
+  }
+  .barTitle {
+    font-family: MicrosoftJhengHei;
+    font-size: 12px;
+    color: #4f69a2;
+    border-right: 1px solid #abb7c8;
+    text-align: center;
+    width: 4.3vw;
+
+  }
+  .hBarBack {
+    background-color: #e4ebf6;
+    position: relative;
+    width: 12.1vw;
+    height: 2vh;
+    border-radius: 4px;
+  }
+  .hBarFilled {
+    position: absolute;
+    left: 0px;
+    height: 2vh;
+    font-size: 14px;
+    line-height: 2vh;
+    font-weight: normal;
+    text-align: right;
+    padding-right: 0.5vw;
+    color: #ffffff;
+    border-radius: 4px 0 0 4px;
+  }
+  .smallContent {
+    height: 21.22vh;
+    padding: 2.5vh 1vw;
+  }
+  .vBarBack {
+    background-color: #e4ebf6;
+    position: relative;
+    width: 2.15vw;
+    height: 14vh;
+  }
+  .vBarFilled {
+    position: absolute;
+    padding-top: 2.5px;
+    bottom: 0px;
+    width: 2.15vw;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+  }

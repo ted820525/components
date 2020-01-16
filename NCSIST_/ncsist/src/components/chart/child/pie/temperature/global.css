@@ -1,0 +1,83 @@
+.fillV {
+    display: flex;
+    align-items: stretch;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .hEnd {
+    display: flex;
+    justify-content: end;
+  }
+  .vEnd {
+    display: flex;
+    align-items: flex-end;
+  }
+  .hStart {
+    display: flex;
+    justify-content: start;
+  }
+  .vStart {
+    display: flex;
+    align-items: flex-startF;
+  }
+  .relative {
+    position: relative;
+  }
+  .bottom {
+    position: absolute;
+    bottom: 0px;
+  }
+  .top {
+    position: absolute;
+    top: 0px;
+  }
+  .hCenter {
+    display: flex;
+    justify-content: center;
+  }
+  .vCenter {
+    display: flex;
+    align-items: center;
+  }
+  .hSpaceBtw {
+    display: flex;
+    justify-content: space-between;
+  }
+  .vSpaceBtw {
+    display: flex;
+    align-items: space-between;
+  }
+  .outsideBlock {
+    height: 100%;
+    width: 100%;
+    border: solid 1px #abb7c8;
+    background-color: #ffffff;
+    opacity: 0.8;
+    padding: 0 1.37vw;
+  }
+  .titleBar {
+    height: 4.5vh;
+    line-height: 4.5vh;
+    border-bottom: solid 1px #e5e5e5;
+    font-size: 16px;
+  font-weight: bold;
+  color: #323b4b;
+  -webkit-text-stroke: 0.3px #323b4b;
+  font-family: MicrosoftJhengHei;
+  }
+  .smallIcon {
+    height: 2vh;
+    width: 2vh;
+    margin: 0 0.5vw;
+  }
+  button {
+    background-color: #6c87b5;
+    color: white;
+    padding: 0.5vh 0;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+  }
