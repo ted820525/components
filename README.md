@@ -1,4 +1,4 @@
-# components
+# components組件
 
 下載後 先打指令 cd  NCSIST_ <br>
           再打 cd ncsist  , 進入ncsist資料夾<br>
