@@ -13,11 +13,11 @@ https://imgur.com/mb4sd7e
 
 # 詳細說明圖可參考
 
-https://imgur.com/48AGRiY
+說明:https://imgur.com/48AGRiY
 
-https://imgur.com/afFei5E
+步驟一:https://imgur.com/afFei5E
 
-https://imgur.com/cLuAFm3
+步驟二:https://imgur.com/cLuAFm3
 
-https://imgur.com/aOlUm5U
+步驟三:https://imgur.com/aOlUm5U
 
