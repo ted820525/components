@@ -11,7 +11,7 @@ ex:C:\Users\Desktop\components-master\NCSIST_\ncsist><br>
 # 資料夾結構圖
 https://imgur.com/mb4sd7e
 
-# 詳細說明圖可參考
+# 例:抓取山積圖stackedgantt詳細說明圖
 
 說明:https://imgur.com/48AGRiY
 
