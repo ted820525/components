@@ -1,6 +1,6 @@
 <template>
 
-<div class="row mr-2">
+<div class="row mr-2" style="font-family: 'Microsoft JhengHei'">
     <div class="col-md-12">
         <div class="panel mt-2">
             <div class="row">
@@ -13,18 +13,18 @@
                 </div>
             </div>
             <br>
-            <div :class="dropformInfo.color" class="r-tableBlock ">
-                <table class="table r-table table-hover cusScrllBar mt-2 " id="break-table">
-                    <thead id="break-search">
+            <div :style= "dropformInfo" class="r-tableBlock ">
+                <table  class=" r-table table-hover cusScrllBar mt-2 " :class= "dropformInfo.background"  id="break-table">
+                    <thead  id="break-search">
                     
                     </thead>
                     <thead >
-                        <tr>
-                            <th style="color: #202f3e;">產線</th>
-                            <th style="color: #202f3e;">訂單編號</th>
-                            <th style="color: #202f3e;">工件</th>
-                            <th style="color: #202f3e;">開始日期</th>
-                            <th style="color: #202f3e;">交期</th>
+                        <tr class="text-bold">
+                            <th :style= "dropformInfo" style="color: #202f3e; font-family: 'Microsoft JhengHei'; ">產線</th>
+                            <th :style= "dropformInfo" style="color: #202f3e; font-family: 'Microsoft JhengHei';">訂單編號</th>
+                            <th :style= "dropformInfo" style="color: #202f3e; font-family: 'Microsoft JhengHei';">工件</th>
+                            <th :style= "dropformInfo" style="color: #202f3e; font-family: 'Microsoft JhengHei';">開始日期</th>
+                            <th :style= "dropformInfo" style="color: #202f3e; font-family: 'Microsoft JhengHei';">交期</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -32,27 +32,27 @@
                         <tr v-for="item in tdData" :key='item'>
                             <td scope="row">
                                 <div>
-                                    <td >{{item.t1}}</td>
+                                    <td :style= "dropformInfo" >{{item.t1}}</td>
                                 </div>
                             </td>
                             <td scope="row">
                                 <div>
-                                    <td>{{item.t2}}</td>
+                                    <td :style= "dropformInfo">{{item.t2}}</td>
                                 </div>
                             </td>
                             <td scope="row">
                                 <div>
-                                    <td>{{item.t3}}</td>
+                                    <td :style= "dropformInfo">{{item.t3}}</td>
                                 </div>
                             </td>
                             <td scope="row">
-                                <div>
-                                    <td>{{item.t4}}</td>
+                                <div >
+                                    <td :style= "dropformInfo">{{item.t4}}</td>
                                 </div>
                             </td>
                             <td scope="row">
-                                <div>
-                                    <td>{{item.t5}}</td>
+                                <div  >
+                                    <td :style= "dropformInfo">{{item.t5}}</td>
                                 </div>
                             </td>
                         </tr>
@@ -80,8 +80,13 @@ export default {
 				{t1:'CNC加工', t2:10808270001, t3:'DSA001',t4:'2019/06/30',t5:'2019/06/30'},
 				{t1:'車床加工', t2:10808270002, t3:'DSA002',t4:'2019/06/30',t5:'2019/06/30'},
                 {t1:'CNC加工', t2:10808270003, t3:'DSA003',t4:'2019/06/30',t5:'2019/06/30'},
-                {t1:30, t2:60, t3:45,t4:45,t5:45}
+                {t1:'CNC加工', t2:10808270001, t3:'DSA001',t4:'2019/06/30',t5:'2019/06/30'},
+                {t1:'車床加工', t2:10808270002, t3:'DSA002',t4:'2019/06/30',t5:'2019/06/30'},
+                {t1:'CNC加工', t2:10808270001, t3:'DSA001',t4:'2019/06/30',t5:'2019/06/30'},
+				{t1:'車床加工', t2:10808270002, t3:'DSA002',t4:'2019/06/30',t5:'2019/06/30'}
                     ],
+                    data: {
+                activeColor: '#F25E7A'}
         }
         }
 
@@ -109,7 +114,10 @@ export default {
     font-family: 'Microsoft JhengHei Light', sans-serif;
     vertical-align: middle;
     text-align: center;
+    
 }
+
+
 
 .r-table h5 {
     font-size: 20px;
@@ -132,7 +140,7 @@ export default {
 }
 
 .r-table>thead>tr>th {
-    color: #7382B0;
+    /* color: #7382B0; */
     padding: 5px;
     border-top: 0px;
     border-bottom: 0px;
@@ -156,7 +164,7 @@ export default {
 	font-family: MicrosoftJhengHei ;
 	font-size: 14px;
 	font-weight: bold;
-	color: #4f69a2;
+	/* color: #4f69a2; */
 }
 
 .r-table>thead:nth-child(2) th:last-child {
@@ -183,7 +191,7 @@ tbody::-webkit-scrollbar-track{
 	border-left: 1px solid #bbc4d2;
 	border-right: 1px solid #bbc4d2;
 	padding: 0 0;
-	background-color: #fff;
+	background-color: #8898bd;
 }
 tbody::-webkit-scrollbar-button:single-button:vertical:decrement{
 	border-left: 1px solid #bbc4d2;

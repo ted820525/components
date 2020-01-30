@@ -1,13 +1,21 @@
 <template>
 <div class="container" style="width:62.5vw; height:38.4vh; border:solid 1px #abb7c8 ">
     
-    <dropform class="dropform" :dropformInfo= "dropform.background" ></dropform>
+    <dropform  :dropformInfo= "dropform.back" ></dropform>
+    <!-- 下拉式表單 -->
+
+
+    <!-- <div><complex></complex></div> -->
+    <!-- 複合式表單 -->
     
 </div>
+
 
 </template>
 
 <script>
+// import complex from './child/complex/complex';
+
 
 import dropform from './child/下拉式表單';
 export default {
@@ -17,9 +25,15 @@ export default {
     data() {
             return {
                 dropform:{
-                background:{
+                back:{
 
-                        color: 'red',
+                        background: "white",
+                        color: ''
+
+                        
+                        
+                        
+                        
                         
                             }
                         }
@@ -30,11 +44,18 @@ export default {
 
 
 
+
 <style scoped>
 
-.red {
-    background-color: #131412 !important;
+
+.color {
+    color: "#deb887"/* burlywood */
+           '#ff69b4'/* hotpink */
+          '#990036' /*Cardinal Red*/
+    
 }
+/* 渲染用:style 比 :clss彈性高 ,可以更改多色 :class只限定自己宣告顏色 ex: red ,green*/
+
 
 
 </style>

@@ -49,24 +49,8 @@ export default {
             text: null
             },
 
-            tickPositions: [
-            2,
-            4,
-            6,
-            8,
-            10,
-            12,
-            14,
-            16,
-            18,
-            20,
-            22,
-            24,
-            26,
-            28,
-            30,
-            32,
-            34
+            categories: [
+            '','','','','','','','',''
             ]
         },
         legend: {
@@ -87,18 +71,19 @@ export default {
             {
             name: "Shut Down",
             color: "#8e8e8f",
-            data: [1]
+            data: [1,2,3]
             },
             {
             name: "ldle",
             color: "#16a2bc",
-            data: [3]
+            data: [3,2,1]
             },
             {
             name: "Auto Run",
             color: "#7e97cd",
-            data: [4]
+            data: [4,2,1]
             }
+            
         ]
         });
     }
