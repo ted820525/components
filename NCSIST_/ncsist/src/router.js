@@ -7,11 +7,11 @@ import Home from './components/layout/Home.vue'
 // import title from './components/title/index.vue'
 // title連接
 
-// import item from './components/form/index.vue'
+import form from './components/form/index.vue'
 // ---
 // form連接
 
-import chart from './components/chart/index.vue'
+// import chart from './components/chart/index.vue'
 // chart連結
 
 
@@ -30,7 +30,7 @@ export default new Router({
 				{
 					path:'System',
 					name:'index',
-					component: chart
+					component: form
 				}
 			]
 		}

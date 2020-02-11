@@ -1,7 +1,7 @@
 <template>
 	<div class="main d-flex flex-column">
 		<div class="d-flex">
-			<img class="align-self-center ml-2" :src="imgSrc" width="20"/>
+			<img class="align-self-center ml-2" />
 			<span class="title align-self-center ml-2">{{BoxObject.title}} :</span>
 		</div>
 		<div class="selectChart d-flex justify-content-around" v-if="BoxObject.type=='select'">
@@ -27,7 +27,7 @@ export default{
 	},
 	data(){
 		return{
-			imgSrc: require("@/assets/washingLine/tool/search.png"),
+			
 		}
 	}
 }

@@ -25,10 +25,13 @@ const barlinechart1 = {
         categories: [
             '',
             '小铣',
-            '小車',
             '大铣',
+            '小車',
+            '中車',
+            '大車',
             ''
         ],
+        crosshair: true,
         labels: {
             style: {
                 color: '#6678A8'
@@ -47,8 +50,22 @@ const barlinechart1 = {
             style: {
                 color: '#6678A8'
             }
-        }
+        },
+            plotLines: [{
+                    color: 'black',
+                    dashStyle:'LongDash', 
+                    width: 3,
+                    value: 45,
+                    label: {
+                        align: 'right',
+                        style: {
+                            fontStyle: 'italic'
+                        },
+                    },
+                    zIndex: 5
+                }]
     },
+      
     credits: {
         enabled: false
     },
@@ -70,14 +87,30 @@ const barlinechart1 = {
         },
     },
     series: [{
+        name: 'Normal',
         type: 'column',
         data: [
             { y: 0, color: '#fff' },
             { y: 60, color: '#4f69a2' },
             { y: 110, color: '#16a2bc' },
             { y: 85, color: '#009389' },
-            { y: 0, color: '#fff' }]
-    }],
+            { y: 70, color: '#C0C0C0' },
+            { y: 50, color: '#8895C0' },
+            { y: 0, color: '#fff' }
+            ]
+            
+            },
+            {
+                    name: 'Datum Line',
+                    type: 'line',
+                    data: ['', 50, 100, 75, 60, 40,''],
+                    color: '#424B5D',
+                    marker: {
+                        lineWidth: 5,
+                        lineColor: '#424B5D',
+                    }
+            }
+    ],
 };
 export default {
     components: {

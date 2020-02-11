@@ -1,29 +1,11 @@
 <template>
     <div class="analysis-content-body">
         <div class="content-body-title">
-            <div class="float-left h-100">
-                <span class="workTitle">
-                    <img class="content-img mr-2" width="23" src="@/assets/washingLine/process/Histogram.png" /> 工程平衡分析圖
-                </span>
-            </div>
-            <div class="float-right h-100">
-                <span class="tt-time">
-                    TT時間
-                </span>
-                <span class="tt-time-value">
-                    60s
-                </span>
-                <span class="balance-rate">
-                    生產平衡率
-                </span>
-                <span class="balance-rate-value">
-                    83%
-                </span>
-            </div>
+    
         </div>
         <div class="analysis-diagram">
             <div class="analysis-background">
-                <img class="up-down-button" src="@/assets/washingLine/process/Up.png" />
+                <img class="up-down-button" src="" />
                 <div class="analysis-bar" v-for="(select, index) in selectIndex" :key="index">
                     <select class="float-left select-machine" v-model="selectIndex[index]">
                         <option v-for="(dataObject, i) in dataArray" :key="i" :value="i">{{dataObject.id}}</option>
@@ -38,7 +20,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="up-down-button" src="@/assets/washingLine/process/Down.png" />
+                <img class="up-down-button" src="" />
             </div>
             <div class="analysis-step">
                 <div v-for="i in 19" :key="i">
@@ -51,7 +33,7 @@
 
 <script>
 export default {
-    name: "balanceAnalysis",
+    name: "three_gantt",
     props: {
         dataArray: { type: Array }
     },
@@ -61,7 +43,7 @@ export default {
         }
     },
     mounted() {
-        console.log(this.dataArray)
+        console.log(this.dataArray);
     },
     methods: {}
 };
@@ -132,7 +114,7 @@ export default {
     float: left;
     width: 60.58333333333333vw;
     height: 23.2vh;
-    background-color: #e4ebf6;
+    background-color: #f2f2f3;
 }
 .up-down-button {
     width: 0.625vw;

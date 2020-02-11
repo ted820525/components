@@ -24,7 +24,7 @@
 <script>
 import Highcharts from 'highcharts';
 import { genComponent } from 'vue-highcharts';
-import gauge from './gauge'
+import gauge from './gauge.js';
 export default {
     components: {
         Highcharts: genComponent('Highcharts', Highcharts)

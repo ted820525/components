@@ -71,15 +71,8 @@ const line1 = {
     series: [{
         type: 'line',
         data: [
-            { y: 11, color: '#13a1bc' },
-            { y: 16, color: '#13a1bc' },
-            { y: 11, color: '#13a1bc' },
-            { y: 12, color: '#13a1bc' },
-            { y: 11, color: '#13a1bc' },
-            { y: 16, color: '#13a1bc' },
-            { y: 8, color: '#13a1bc' },
-            { y: 9, color: '#13a1bc' },
-            { y: 7, color: '#13a1bc' }]
+          
+            ]
     }],
 };
 
@@ -116,6 +109,9 @@ const line2 = {
         tickAmount: 6,
         min: 0,
         max: 25,
+        marker: {  radius: 10 },
+
+
         title: {
             text: null
         },
@@ -137,19 +133,33 @@ const line2 = {
         shared: true,
         useHTML: true
     },
-    series: [{
+    series: [
+        {
         type: 'line',
-        data: [
-            { y: 7, color: '#13a1bc' },
-            { y: 9, color: '#13a1bc' },
-            { y: 8, color: '#13a1bc' },
-            { y: 16, color: '#13a1bc' },
-            { y: 11, color: '#13a1bc' },
-            { y: 12, color: '#13a1bc' },
-            { y: 11, color: '#13a1bc' },
-            { y: 16, color: '#13a1bc' },
-            { y: 11, color: '#13a1bc' }]
-    }],
+        name:'小洗',
+        data: [7,8,9,16,11,17,11,18],
+        marker: {
+            symbol:"circle" 
+            } ,
+        },
+        {
+        type: 'line',
+        name:'小洗',
+        data: [2,5,9,10,13,15,11,9],
+        marker: {
+            symbol:"circle" 
+            } ,
+        },
+        {
+        type: 'line',
+        name:'大洗',
+        data: [15,2,1,3,6,18,19,25],
+        marker: 'null '
+            
+        
+        }
+        
+    ],
 };
 export default {
     components: {
